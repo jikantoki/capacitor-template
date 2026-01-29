@@ -150,14 +150,14 @@ $mailFooter = "<p>
 大体こんな感じで設定する
 
 ```htaccess
-#トップページを/nuxt4temp/php にする
+#トップページを/capacitor-template/php にする
 <IfModule mod_rewrite.c>
 RewriteEngine on
 RewriteBase /
-RewriteRule ^$ nuxt4temp/php/ [L]
+RewriteRule ^$ capacitor-template/php/ [L]
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule ^(.+)$ nuxt4temp/php/$1 [L]
+RewriteRule ^(.+)$ capacitor-template/php/$1 [L]
 </IfModule>
 # 外部からのAPIへのアクセスを許可
 Header append Access-Control-Allow-Origin: "*"
