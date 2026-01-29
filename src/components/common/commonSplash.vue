@@ -1,7 +1,7 @@
 <template lang="pug">
 .wait
   .wait-wrap(style="background:rgb(var(--v-theme-background));")
-    img.splash-img(src="/img/icon512.png")
+    img.splash-img(src="/icon.png")
     p.mt-4.text-h5.splash-text Capacitor Template
     .ma-16
     .loading

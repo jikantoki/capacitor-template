@@ -42,7 +42,7 @@ if ($friendStatus) {
   sendMail($toMailaddress['mailAddress'], '友達申請リクエスト承認のお知らせ', "
   <p>{$myId}が友達申請を承認しました。</p>
   <br>
-  <p>アプリを開いて、位置情報を見てみよう！</p>
+  <p>アプリを開いてこう！</p>
   ");
 } else {
   SQL("

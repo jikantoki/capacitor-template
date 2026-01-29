@@ -11,36 +11,6 @@ export const useSettingsStore = defineStore('settings', {
     },
     /** 通知設定 */
     notification: {},
-    /** 位置情報とプライバシー */
-    location: {
-      /** 共有の一時停止 */
-      pause: false,
-      /** 共有する時間 */
-      shareTime: {
-        /** Trueなら、StartからEndまでの時間しか共有しない */
-        enabled: false,
-        /** 共有開始時間 */
-        start: {
-          hour: 0,
-          min: 0,
-        },
-        /** 共有終了時間 */
-        end: {
-          hour: 0,
-          min: 0,
-        },
-      },
-      /** 共有する場所と距離 */
-      shareLocation: {
-        /** Trueなら、centerからdistanceの距離にいる時しか共有しない */
-        enabled: false,
-        centerLatlng: [0, 0],
-        /** centerから何m先までシェアを有効にするか */
-        distance: 0,
-      },
-    },
-    /** タイムライン設定 */
-    timeline: {},
     /** 開発者オプション */
     developerOptions: {
       /** 開発者オプションが有効 */

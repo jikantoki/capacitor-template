@@ -33,33 +33,6 @@ v-card(
           p.description メール、プッシュ通知
       .setting-item(
         v-ripple
-        @click="$router.push('/settings/privacy')"
-        )
-        .icon
-          v-icon mdi-lock-outline
-        .text
-          p.title 位置情報とプライバシー
-          p.description 位置情報の共有条件の設定
-      .setting-item(
-        v-ripple
-        @click="$router.push('/settings/timeline')"
-        )
-        .icon
-          v-icon mdi-file-document-outline
-        .text
-          p.title タイムライン
-          p.description 履歴データの管理
-      .setting-item(
-        v-ripple
-        @click="openBatterySettings"
-        )
-        .icon
-          v-icon mdi-battery
-        .text
-          p.title バッテリーのバックグラウンド設定
-          p.description 位置情報を追跡するために、バッテリーの最適化を無効化してください
-      .setting-item(
-        v-ripple
         @click="$router.push('/terms')"
         )
         .icon
@@ -159,12 +132,6 @@ v-dialog(
         await NativeSettings.open({
           optionAndroid: AndroidSettings.AppNotification,
           optionIOS: IOSSettings.AppNotification,
-        })
-      },
-      async openBatterySettings () {
-        await NativeSettings.open({
-          optionAndroid: AndroidSettings.BatteryOptimization,
-          optionIOS: IOSSettings.App,
         })
       },
       /** URLをブラウザで開く */

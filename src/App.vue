@@ -70,16 +70,11 @@ v-app
 
       /** ログイン情報 */
       if (this.myProfile.$state.guest == false) {
-        if (this.myProfile.lastGetLocationTime) {
-          this.myProfile.lastGetLocationTime = new Date(this.myProfile.lastGetLocationTime)
-        }
-
         setTimeout(async () => {
           const token = this.myProfile.userToken
           const profile = await this.getProfile(this.myProfile.userId ?? '')
           if (profile) {
             profile.userToken = token
-            profile.battery = this.myProfile.battery
             profile.guest = false
             this.myProfile = {
               ...this.myProfile,
@@ -136,6 +131,7 @@ v-app
 .status-bar-padding.android-15-or-higher {
   height: 40px;
   width: 100vw;
+  background-color: rgb(var(--v-theme-surface));
 }
 .nav-bar-padding.android-15-or-higher {
   height: 16px;
@@ -159,13 +155,13 @@ main {
 //テーマカラーの変更
 //青紫がテーマカラー！
 .v-theme--dark {
-  --v-theme-primary: 145,56,213!important;
+  --v-theme-primary: 225,35,120!important;
 }
 .v-theme--light {
-  --v-theme-primary: 145,56,213!important;
+  --v-theme-primary: 225,35,120!important;
 }
 :root {
-  --v-theme-primary: 145,56,213!important;
+  --v-theme-primary: 225,35,120!important;
 }
 
 :root {

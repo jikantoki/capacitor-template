@@ -42,7 +42,7 @@ v-card(
           v-icon mdi-application-outline
         .text
           p.title Capacitor Template
-          p.description &copy; 2025 エノキ電気
+          p.description &copy; 2019 エノキ電気
       .setting-item(
         v-ripple
         @click="developerOptionToggle()"

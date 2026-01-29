@@ -166,7 +166,7 @@
       .my-16.text-h4(
         v-show="myProfile.userId != param.userId"
         style="text-align: center;"
-      ) 友達を増やして、地図を賑やかにしよう！
+      ) 友達を増やそう！
 v-dialog(
   v-model="isInvalid"
   style="max-width: 500px;"
