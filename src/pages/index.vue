@@ -231,7 +231,6 @@ v-card(
   import mixins from '@/mixins/mixins'
   import { useMyProfileStore } from '@/stores/myProfile'
   import { useSettingsStore } from '@/stores/settings'
-  import 'leaflet/dist/leaflet.css'
 
   export default {
     components: {},

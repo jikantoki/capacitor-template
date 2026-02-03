@@ -48,11 +48,6 @@
   resolved "https://registry.npmjs.org/@bufbuild/protobuf/-/protobuf-2.10.2.tgz"
   integrity sha512-uFsRXwIGyu+r6AMdz+XijIIZJYpoWeYzILt5yZ2d3mCjQrWUTVpVD9WL/jZAbvp+Ed04rOhrsk7FiTcEDseB5A==
 
-"@capacitor-community/background-geolocation@^1.2.26":
-  version "1.2.26"
-  resolved "https://registry.npmjs.org/@capacitor-community/background-geolocation/-/background-geolocation-1.2.26.tgz"
-  integrity sha512-kuva8VQ6zM+uIKgHUJTP87IYbmGKhX7DZw62JYfGZ888h4Xr5zeN+UTR6KBRHQVrGBpzSfbv+6/HQVuHYa7W5A==
-
 "@capacitor/android@^8.0.0":
   version "8.0.0"
   resolved "https://registry.npmjs.org/@capacitor/android/-/android-8.0.0.tgz"
@@ -85,11 +80,6 @@
     sharp "0.32.6"
     tslib "2.6.2"
     yargs "17.7.2"
-
-"@capacitor/background-runner@^3.0.0":
-  version "3.0.0"
-  resolved "https://registry.npmjs.org/@capacitor/background-runner/-/background-runner-3.0.0.tgz"
-  integrity sha512-BSUypHc9P7p8A8O7a686ifzUWq6W03n384C+WVpUrXHvwZdtpvm7gJO3NIXACb9mvYuKv+bh4CYv7YfB4rBIcg==
 
 "@capacitor/browser@^8.0.0":
   version "8.0.0"
@@ -170,18 +160,6 @@
   integrity sha512-AfawIxQ8xBmKsEn/vEpgurGQB9+hFXRtwEiCXR+SSS0MkTw4bJrvLGnloZ/PblegYefvnay1q079Yz3PQ6y1dA==
   dependencies:
     "@capacitor/synapse" "^1.0.4"
-
-"@capacitor/geolocation@^8.0.0":
-  version "8.0.0"
-  resolved "https://registry.npmjs.org/@capacitor/geolocation/-/geolocation-8.0.0.tgz"
-  integrity sha512-ci6gOWd5/uruC3bRTxI3xFd9g82WnnJbdQxOH3oZOATNuedlaAw5c5/zXEIMYfRB7t2x1v8/N9gXkND6/nOmVQ==
-  dependencies:
-    "@capacitor/synapse" "^1.0.4"
-
-"@capacitor/push-notifications@^8.0.0":
-  version "8.0.0"
-  resolved "https://registry.npmjs.org/@capacitor/push-notifications/-/push-notifications-8.0.0.tgz"
-  integrity sha512-xJWQLqAfC8b2ETqAPmwDnkKB4t/lVrbYc2D8VpA2fSu10JFSL/R722Vk0Lfl9Lo9WusmyIiQbVfILNQ3iFNGKw==
 
 "@capacitor/share@^8.0.0":
   version "8.0.0"
@@ -1164,13 +1142,6 @@
     "@volar/language-core" "2.4.27"
     path-browserify "^1.0.1"
     vscode-uri "^3.0.8"
-
-"@vue-leaflet/vue-leaflet@^0.10.1":
-  version "0.10.1"
-  resolved "https://registry.npmjs.org/@vue-leaflet/vue-leaflet/-/vue-leaflet-0.10.1.tgz"
-  integrity sha512-RNEDk8TbnwrJl8ujdbKgZRFygLCxd0aBcWLQ05q/pGv4+d0jamE3KXQgQBqGAteE1mbQsk3xoNcqqUgaIGfWVg==
-  dependencies:
-    vue "^3.2.25"
 
 "@vue-macros/common@3.0.0-beta.16":
   version "3.0.0-beta.16"
@@ -3474,11 +3445,6 @@ kolorist@^1.8.0:
   resolved "https://registry.npmjs.org/kolorist/-/kolorist-1.8.0.tgz"
   integrity sha512-Y+60/zizpJ3HRH8DCss+q95yr6145JXZo46OTpFvDZWLfRCE4qChOyk1b26nMaNpfHHgxagk9dXT5OP0Tfe+dQ==
 
-leaflet@^1.9.4:
-  version "1.9.4"
-  resolved "https://registry.npmjs.org/leaflet/-/leaflet-1.9.4.tgz"
-  integrity sha512-nxS1ynzJOmOlHp+iL3FyWqK89GtNL8U8rvlMOsQdTTssxZwCXh8N2NB3GDQOL+YR3XnWyZAxwQixURb+FA74PA==
-
 levn@^0.4.1:
   version "0.4.1"
   resolved "https://registry.npmjs.org/levn/-/levn-0.4.1.tgz"
@@ -5580,7 +5546,7 @@ vue-tsc@^3.0.7:
     "@volar/typescript" "2.4.27"
     "@vue/language-core" "3.2.1"
 
-vue@^3.2.25, vue@^3.5.21:
+vue@^3.5.21:
   version "3.5.26"
   resolved "https://registry.npmjs.org/vue/-/vue-3.5.26.tgz"
   integrity sha512-SJ/NTccVyAoNUJmkM9KUqPcYlY+u8OVL1X5EW9RIs3ch5H2uERxyyIUI4MRxVCSOiEcupX9xNGde1tL9ZKpimA==
