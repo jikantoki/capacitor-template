@@ -24,7 +24,8 @@ v-card(
         hr
         p このコンポーネントを使えば、エモい感じで画像を簡単に表示できます
         .img-wrap.my-4
-          img.big-img(src="/icon.png" height="128")//-- 下部のアクションバー --
+          img.big-img(src="/icon.png" height="128")
+  //-- 下部のアクションバー --
   .action-bar
     .buttons
       .button(
