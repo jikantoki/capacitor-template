@@ -205,6 +205,10 @@ v-card(
             .icon-and-text
               v-icon mdi-information
               v-list-item-title このアプリについて
+          v-list-item.item( @click="share('https://play.google.com/store/apps/dev?id=8940000495375956936', 'エノキ電気')" )
+            .icon-and-text
+              v-icon mdi-share-variant
+              v-list-item-title このアプリを共有する
   v-dialog(
     v-model="acceptDialog"
     persistent
@@ -226,8 +230,9 @@ v-card(
 <script lang="ts">
   import { App } from '@capacitor/app'
   import { Browser } from '@capacitor/browser'
-  import { Toast } from '@capacitor/toast'
+  import { Share } from '@capacitor/share'
 
+  import { Toast } from '@capacitor/toast'
   // @ts-ignore
   import mixins from '@/mixins/mixins'
   import { useMyProfileStore } from '@/stores/myProfile'
@@ -422,6 +427,13 @@ v-card(
         // 10秒 = 10000ミリ秒
         const diffInMilliseconds = Math.abs(date1.getTime() - date2.getTime())
         return diffInMilliseconds <= 10_000
+      },
+      /** シェアダイアログ */
+      async share (content: string, title = '') {
+        await Share.share({
+          url: content,
+          title: title,
+        })
       },
     },
   }
